@@ -1,0 +1,175 @@
+/* ------------------------------------------FOOTER------------------------------------------ */
+*{
+    padding: 0;
+    margin: 0;
+}
+footer{
+    width: 100%;
+    /* background: rgb(54, 4, 4); */
+    background: radial-gradient(#fff, #ffd6d6);
+    text-align: center;
+    position: relative;
+}
+.email{
+    padding: 70px 0px 20px 0px;
+}
+
+.email label, .textarea label{
+    display: block;
+    color: #555;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.email input[type="email"]{ 
+    box-sizing: border-box;
+    width:  50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+.textarea textarea{
+    box-sizing: border-box;
+    padding: 10px; 
+    width: 50%; 
+    font-size: 1.1rem; 
+    border-radius: 5px;
+    border: none;
+}
+
+label i{
+    font-size: 20px;
+}
+input[type="email"]::placeholder, .textarea textarea::placeholder{
+    color: grey;
+    font-size: 1.1rem;
+}
+input[type="email"]:focus, .textarea textarea:focus{
+    outline: none;
+}
+form button[type="submit"]{
+    width: 50%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: inline-block;
+    background: #ff523b;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background .5s;
+}
+form button[type="submit"]:hover{
+        background: #563434;
+}
+form button[type="submit"] a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.thank-you {
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+      display: none;
+      text-align: center;
+}
+
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 70px 0 0 0;
+}
+.social-links a{
+    text-decoration: none;
+    color: #555;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+
+    font-size: 2rem;
+}
+.social-links a:hover{
+    transform: scale(1.2);
+}
+
+.contact p{
+    color: #555;
+    font-size: 1.2rem;
+    padding: 40px 0 0 0;
+}
+.contact .contact-details{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.phone i, span, .contact-email i{ 
+    color: #555;
+    font-size: 1rem;
+}
+.phone , .contact-email{
+    padding: 20px 0;
+}
+
+.phone i, .contact-email i{
+    display: inline-block;
+    font-size: 1.7rem;
+    margin-right: 10px;
+    animation-name: contact-dance;
+    animation-duration: 0.5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    transition: transform 0.3s ease-in-out;
+}
+
+@keyframes contact-dance{
+    0%{
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@media screen and (max-width: 768px)   {
+    .email input[type="email"]{
+    width:  70%;
+}
+.textarea textarea{
+    width: 70%; 
+}
+
+form button[type="submit"]{
+    width: 70%;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.social-links a{
+    font-size: 1.5rem;
+}
+
+.contact .contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;  
+}
+.phone, .contact-email{
+    padding: 10px 0;
+} 
+.phone  span, .contact-email span{
+    font-size: 1rem;
+} 
+.phone i, .contact-email i{
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+}
